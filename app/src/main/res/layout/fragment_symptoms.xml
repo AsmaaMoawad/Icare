@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding16">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/diagnosis"/>
+        <TextView
+            android:id="@id/header"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/symptoms"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Select From Here"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/colorAbout"
+            android:backgroundTint="@color/colorText"/>
+
+
+        <TextView
+            android:id="@+id/sym1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/firstsymptom"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/sym2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/secondsymptom"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/sym3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/thirdsymptom"
+            android:background="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/sym4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/forthdsymptom"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/sym5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fifthsymptom"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/Intent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLogin"
+            android:textColor="@color/colorAccent"
+            android:text="@string/submit"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTertiary"
+            android:textColor="@color/colorAccent"
+            android:text="@string/reset"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

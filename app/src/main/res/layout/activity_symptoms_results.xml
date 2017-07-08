@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding16"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".activates.MedicationActivity">
+
+<RelativeLayout
+    android:id="@+id/activity_symptoms_results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resulthead"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/getwell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getwell"
+        android:layout_below="@+id/header"
+        android:textColor="@color/colorBlue"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/getwell"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView" />
+
+
+    <TextView
+        android:id="@+id/diseasehead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="@string/diseaseresult"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/diseasehead"
+        android:textSize="18sp"
+        android:textColor="@color/colorAbout" />
+
+    <TextView
+        android:id="@+id/drughead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:text="@string/drug"/>
+
+    <TextView
+        android:id="@+id/drugview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drughead"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/colorAbout" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/drugview"
+        android:background="@drawable/rounded_button_blue"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:text="@string/more"
+        android:id="@+id/more" />
+
+</RelativeLayout>
+    </ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding16"
+    android:layout_height="wrap_content"
+    tools:context=".activates.RecoveryActivity">>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:id="@id/title"
+            android:layout_below="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_message"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_email"
+            android:layout_below="@id/title"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Email"
+                android:translationY="5dp"
+                android:inputType="textEmailAddress"
+                android:background="@color/colorText"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_email"
+            android:background="@drawable/rounded_button_red"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/send_password"
+            android:textSize="18sp"
+            android:id="@+id/buttonSend" />
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginhead"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/buttonSend"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_below="@+id/loginTextView"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+</ScrollView>
